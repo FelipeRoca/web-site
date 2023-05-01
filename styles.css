@@ -45,3 +45,11 @@ body{
     height:90%;
 
 }
+
+
+.text-bio{
+    text-align: justify;
+    font-style:italic;
+    line-height: 2;
+
+}
