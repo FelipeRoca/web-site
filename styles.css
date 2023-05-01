@@ -26,3 +26,22 @@ body{
     border-left-width: 4px;
 
 }
+
+.menu{
+
+}
+
+.menu-item{
+    display:block;
+    margin-bottom: 1rem;
+    background-color: brown;
+    border: 1px solid black;
+    text-align:center;
+}
+
+
+.imagen1{
+    width: 90%;
+    height:90%;
+
+}
