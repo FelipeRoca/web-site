@@ -88,3 +88,18 @@ h1{
 .show-error{
     display: block;
 }
+
+#get-user{
+    display: block;
+    margin: 0 auto;
+}
+
+.user{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.texto-socio{
+    text-align: center;
+}
