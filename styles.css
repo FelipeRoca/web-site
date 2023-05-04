@@ -27,9 +27,6 @@ body{
 
 }
 
-.menu{
-
-}
 
 .menu-item{
     display:block;
@@ -37,6 +34,10 @@ body{
     background-color: brown;
     border: 1px solid black;
     text-align:center;
+    text-decoration-color: lavender;
+    text-emphasis-color: lavender;
+    -webkit-text-stroke-color: lavender;
+    color: lavender;
 }
 
 
@@ -65,4 +66,25 @@ h1{
 .form-control{
     display: block;
     margin: 0.5rem 0;
+    background-color:tomato;
+}
+
+#message{
+    background-color:tomato;
+
+}
+
+.form-button{
+    display: block;
+    background-color:tomato;
+
+}
+
+.error{
+    display: none;
+    color: blue;
+}
+
+.show-error{
+    display: block;
 }

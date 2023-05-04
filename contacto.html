@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <div class="container"> 
         <div class=" container-left">
             <div class="menu">
-                <a class="menu-item" href="">Home</a>
+                <a class="menu-item" href="index.html">Home</a>
                 <a class="menu-item" href="bio.html">Bio</a>
                 <a class="menu-item" href="contacto.html">Contacto</a>
 
@@ -22,14 +24,25 @@
                 <h1>Contactate con nosotros </h1>
                 <form action="">
 
-                        <input type="text" class="form-control" name="name" id="name">
-                        <input type="text" class="form-control" name="email" id="email">
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        <button type="submit" id="submit">Enviar</button>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button class="form-button"type="submit" id="submit">Enviar</button>
+
+                        <span class="error" id="error">Debe completar todos los campos</span>   
+                        <!-- creas una span para luego en css poner display none y q no se muestre y en java asociar a esta otra clase show-error q tenga display: block en css y mostrar el span en caso de q se cumpla lo q dispara el comando en java -->
 
 
                 </form>
                 
+
+                <div class="user-message-comteiner">      
+                    <p id="user-name"></p>
+                    <p id="user-email"></p>
+                    <p id="user-message"></p>
+
+                </div>
+                <!-- creamos un espacio de muestra para mostrar los contenidos de las cajas em caso de qq ninguna este vacia -->
         </div>
 
     </div>
