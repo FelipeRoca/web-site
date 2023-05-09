@@ -38,6 +38,13 @@ function getUser(){
         .then((response) =>{
             const userData = response.results[0].name;
             document.querySelector('#user-name').innerHTML=`${userData.title} ${userData.first} ${userData.last}`;
-        })
-}
+            //const username = document.querySelector('#user-name').value;
 
+                 
+
+            }
+        )
+        if( userData ==''){
+            document.querySelector('#errorsocio').classList.add('show-errorsocio')
+    }
+}

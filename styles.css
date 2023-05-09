@@ -124,3 +124,13 @@ h1{
     display:block;
     color: green;
 }
+
+.errorsocio{
+    display: none;
+}
+
+.show-errorsocio{
+    display: block;
+    color: blue;
+    height: 12px;
+}
