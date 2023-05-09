@@ -7,12 +7,15 @@ window.addEventListener('load', () => {                              //agregas u
         event.preventDefault();                                      //evento q hace q no salgan en el url los nombres de los componentes de las cosas de la pagina, por el ejemplo nombre o email en la pagina de contacto
         const name = document.querySelector('#name').value;
         const email = document.querySelector('#email').value;
+        const telefono = document.querySelector('#telefono').value;
         const message = document.querySelector('#message').value;
 
-        if(name !==''  && email!==''  && message!==''){             //if q dice q se cargo algo en cada casilla al momento de apretar enviar
+        if(name !==''  && email!=='' && telefono!=='' && message!==''){             //if q dice q se cargo algo en cada casilla al momento de apretar enviar
             document.querySelector('#user-name').innerHTML= name;   //buscamos la var user-name y le asignamos el valor de lo q toma name a traves del comando innerHTML
             document.querySelector('#user-email').innerHTML= email;
+            document.querySelector('#user-telefono').innerHTML= telefono;
             document.querySelector('#user-message').innerHTML= message;
+                document.querySelector('#correcto').classList.add('mostrar-correcto')
 
         } else {
             document.querySelector('#error').classList.add('show-error');      //en caso de q una este vacia: classList devuelve las clases asociadas a la variable encontrada cn el query y a esta lista de clases añadimos la de show-error que es la q muestra el span a traves de display: block en css

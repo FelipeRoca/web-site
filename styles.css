@@ -114,3 +114,13 @@ h1{
 .texto-socio{
     text-align: center;
 }
+
+
+.correcto{
+    display:none;
+}
+
+.mostrar-correcto{
+    display:block;
+    color: green;
+}
