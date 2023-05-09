@@ -56,13 +56,17 @@ body{
 
 
 .text-bio{
-    text-align: justify;
+    text-align: center;
     font-style:italic;
-    line-height: 2;
+    line-height: 1;
 
 }
 
-
+.titulo-bio{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
 
 
 h1{
