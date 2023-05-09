@@ -8,7 +8,14 @@ body{
 .container{
         display:flex;
         height: 100vh ;
+        flex-direction: column;
 
+}
+
+@media (min-width: 768px){      /* esto es como un if, si el ancho es mas de 768 entonces container va a tenr una flex-direciton:row , p q cuando el dispositivo sea una pc se vea de una mejor forma*/
+    .container{
+        flex-direction: row;
+    }
 }
 
 .container-left{
